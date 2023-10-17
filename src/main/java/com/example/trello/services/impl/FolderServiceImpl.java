@@ -14,9 +14,9 @@ import java.util.List;
 
 @Service
 public class FolderServiceImpl implements FolderService {
-    private FolderRepository folderRepository;
-    private CategoryRepository categoryRepository;
-    private TaskRepository taskRepository;
+    private final FolderRepository folderRepository;
+    private final CategoryRepository categoryRepository;
+    private final TaskRepository taskRepository;
 
     @Autowired
     public FolderServiceImpl(FolderRepository folderRepository, CategoryRepository categoryRepository, TaskRepository taskRepository) {

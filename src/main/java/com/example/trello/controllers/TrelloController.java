@@ -18,7 +18,7 @@ import java.util.List;
 @Controller
 public class TrelloController {
 
-    private FolderService folderService;
+    private final FolderService folderService;
 
     @Autowired
     public TrelloController(FolderService folderService) {
